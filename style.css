@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcead2;
+    width: 100%;
+    background:url(imagens/bck-onda.png) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 100px;
+    text-align: start;
+    font-size: 50px;
+    color: #1c3c5a;
+    margin-top: 20px;
+}
+
+body h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 100px;
+    text-align: start;
+    font-size: 20px;
+    color: #1c3c5a;
+}
+
+body button {
+    margin-left: 100px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1c3c5a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fce9d3;
+  border-radius: 2%;
+}
+
+.logo-nome {
+    position:absolute;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 60px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-nome h1 {
+  font-size: 40px;
+  color: #1c3c5a;
+  margin: 0;
+}
+
+.menu ul {
+    position: relative;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  left: 190%;
+}
+
+.menu a {
+    font-size: 20px;
+  text-decoration: none;
+  color: #1c3c5a;
+  font-weight: bold;
+}
+
+.fundo-onda {
+  position: relative;
+  
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-ipfav {
+    position: absolute;
+    left: 800px; 
+    top: 100px;
+}
+
+.logo-ipfav img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.sub-pg{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    background-color: #fcead2;
+}
+
+.sub-pg-texto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1c3c5a;
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.sub-pg-texto h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub-pg-texto a{
+    color: #1c3c5a;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: url(imagens/bck-onda-cel.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  body h1 {
+    position: relative;
+    font-size: 25px;
+    margin-left: 5%;
+    text-align: start;
+  }
+
+  body h3 {
+    font-size: 16px;
+    margin-left: 5%;
+    text-align: start;
+  }
+
+  body button {
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    left: 5%;
+    display: flex;
+    margin: 2px auto;
+  }
+
+  .logo-ipfav {
+    position: absolute;
+    left: 66%;
+    top: 13%;
+  }
+
+  .logo-ipfav img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-nome {
+    position: absolute; /* Remover absolute */
+    flex-direction: column;
+    align-items: flex-start;
+    right: 75%; /* Alinha à esquerda */
+    top: 1.5%;
+    margin-bottom: 10px;
+  }
+
+  .logo-nome h1 {
+    font-size: 160%;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .menu ul {
+    position: absolute;
+  display: flex;
+  gap: 3%;
+  list-style: none;
+  width: 100%;
+  left: 20%;
+  }
+
+  .menu a {
+    font-size: 70%;
+  }
+
+  .sub-pg{ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  background-color: #fcead2;
+  padding: 20px;}
+  
+  .sub-pg-texto { 
+    font-size: 80%;
+   }      
+   
+   .sub-pg-texto h2 {
+    font-size: 120%; 
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    gap: 10px;    
+    width: 100%;
+    }    
+  }
