@@ -131,9 +131,6 @@ body button {
 }
 
 @media screen and (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
 
   body {
     width: 100%;
