@@ -80,7 +80,7 @@ body button a {
   display: flex;
   gap: 30px;
   list-style: none;
-  left: 150%;
+  left: 140%;
 }
 
 .menu a {
@@ -498,3 +498,4 @@ body button a {
     padding: 15px;
   }
 }
+
