@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 body{
+  color: #5ba1c6;
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #fcead2;
     width: 100%;
     background:url(imagens/bck-onda.png) no-repeat center center;
+    background-color: #3f8bb8;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -41,13 +42,17 @@ body button {
     cursor: pointer;
 }
 
+body button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .topo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: #fce9d3;
-  border-radius: 2%;
 }
 
 .logo-nome {
@@ -75,7 +80,7 @@ body button {
   display: flex;
   gap: 30px;
   list-style: none;
-  left: 190%;
+  left: 150%;
 }
 
 .menu a {
@@ -128,6 +133,197 @@ body button {
 .sub-pg-texto a{
     color: #1c3c5a;
     text-decoration: underline;
+}
+
+.fotos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fotos-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #000000 0px 14px 18px;
+    transition: transform 0.3s ease;
+}
+
+.sub-pg-imagem{
+    border-radius: 3%;
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    background-color: #fcead2;
+    box-shadow: #000000 0px 14px 18px;
+}
+
+.sub-pg-imagem-texto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1c3c5a;
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.sub-pg-imagem h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub-pg-imagem a{
+    color: #1c3c5a;
+    text-decoration: underline;
+}
+
+.bloco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 1%;
+}
+
+.bloco .texto{
+  flex: 1;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: #000000 0px 14px 18px;
+  background-color: #fce9d3;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1c3c5a;
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.texto h3 {
+  font-size: 30px;
+  margin-top: 1px;
+  text-align: center;
+  color: #1c3c5a;
+}
+
+.texto p {
+  line-height: 1.6;
+}
+
+.texto a{
+    color: #1c3c5a;
+    text-decoration: underline;
+}
+
+.bloco .imagem img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: #000000 0px 14px 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Alterna os lados automaticamente */
+.bloco:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.evento-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.evento {
+  position: relative;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+.evento h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.evento h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.evento h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.evento p {
+  text-align: justify;
+  color: #555;
+}
+
+.evento a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: end;
+}
+
+.evento img {
+  position: absolute;
+  top: 5%;
+  left: 52%;
+  width: 45%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #000000;
+}
+
+.evento a {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  margin: 10px;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: end;
+}
+
+.evento a:hover {
+  text-decoration: underline;
+}
+
+
+.scroll-box {
+  min-width: 200px;
+  height: 250px;
+  background-color: #eee;
+  border-radius: 8px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
@@ -186,13 +382,13 @@ body button {
     position: absolute; /* Remover absolute */
     flex-direction: column;
     align-items: flex-start;
-    right: 75%; /* Alinha à esquerda */
+    right: 750%; /* Alinha à esquerda */
     top: 1.5%;
     margin-bottom: 10px;
   }
 
   .logo-nome h1 {
-    font-size: 160%;
+    font-size: 100%;
   }
 
   .menu {
@@ -211,8 +407,9 @@ body button {
   display: flex;
   gap: 2%;
   list-style: none;
+  margin-top: 10%;
   width: 100%;
-  left: 20%;
+  left: 0;
   }
 
   .menu a {
@@ -238,4 +435,66 @@ body button {
     gap: 10px;    
     width: 100%;
     }    
+    
+  .bloco {
+    flex-direction: column !important;
+    text-align: center;
   }
+
+  .bloco .imagem img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .bloco .texto {
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .texto h3 {
+    font-size: 24px;
+  }
+
+  .evento-container {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 20px;
+    max-width: 85%;
+    margin-bottom: 10px;
+  }
+
+  .evento {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 180px; /* espaço para imagem */
+  }
+
+  .evento img {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .evento a {
+    position: static;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .evento p {
+    font-size: 14px;
+    text-align: justify;
+    max-width: 90%;
+  }
+
+  .scroll-box {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
