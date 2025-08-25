@@ -130,19 +130,23 @@ body button {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px){
-    body{
-    height: 80vh;
-    height: 80dvh;
-    padding:0;
+@media (max-width: 768px) {
+    html,body {
+    width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
+    padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-color: #fcead2;
+    background:url(imagens/bck-onda.png) no-repeat center center;
+    background-attachment: local; /* ou simplesmente remova essa linha */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-
+  
   body h1 {
     position: relative;
     font-size: 25px;
@@ -152,6 +156,7 @@ body button {
 
   body h3 {
     font-size: 16px;
+    margin-top: 15%;
     margin-left: 5%;
     text-align: start;
   }
@@ -204,7 +209,7 @@ body button {
   .menu ul {
     position: absolute;
   display: flex;
-  gap: 3%;
+  gap: 2%;
   list-style: none;
   width: 100%;
   left: 20%;
@@ -219,11 +224,11 @@ body button {
   gap: 1rem;
   background-color: #fcead2;
   padding: 20px;}
-
+  
   .sub-pg-texto { 
     font-size: 80%;
    }      
-
+   
    .sub-pg-texto h2 {
     font-size: 120%; 
     padding: 0;
