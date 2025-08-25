@@ -147,38 +147,105 @@ body button {
     background: url(imagens/bck-onda-cel.png) no-repeat center center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
-  .logo-nome {
-    position: relative; /* Removido absolute */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 0;
+  body h1, body h3 {
+    font-size: 25px;
+    margin-left: 5%;
+    text-align: start;
   }
 
-  .logo-ipfav {
-    position: relative; /* Removido absolute */
-    margin: 10px auto;
-  }
-
-  .menu ul {
-    position: relative; /* Removido absolute */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  body h3 {
+    font-size: 16px;
   }
 
   body button {
-    position: relative; /* Removido absolute */
-    margin: 10px auto;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    left: 5%;
+    bottom: 5%;
+    max-width: 90%;
+  }
+
+  .logo-ipfav {
+    position: absolute;
+    left: 60%; /* Reduzido para caber melhor */
+    top: 13%;
+    transform: translateX(-50%);
+  }
+
+  .logo-ipfav img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-nome {
+    position: absolute;
+    left: 5%; /* Substitui right: 75% */
+    top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 90%;
+  }
+
+  .logo-nome h1 {
+    font-size: 160%;
+  }
+
+  .menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .menu ul {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    list-style: none;
+    width: 90%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu a {
+    font-size: 70%;
+    word-break: break-word;
+  }
+
+  .sub-pg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    background-color: #fcead2;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .sub-pg-texto {
+    font-size: 80%;
+  }
+
+  .sub-pg-texto h2 {
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
   }
 }
