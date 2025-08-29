@@ -6,7 +6,7 @@ body{
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
-    background:url(imagens/bck-onda.png) no-repeat center center;
+    background:url(imagens/bg-bege.png) no-repeat center center;
     background-color: #3f8bb8;
   background-size: cover;
   display: flex;
@@ -52,7 +52,7 @@ body button a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #fce9d3;
+  background-color: #e8d0b2;
 }
 
 .logo-nome {
@@ -80,7 +80,7 @@ body button a {
   display: flex;
   gap: 30px;
   list-style: none;
-  left: 140%;
+  left: 100%;
 }
 
 .menu a {
@@ -104,7 +104,6 @@ body button a {
 }
 
 .logo-ipfav img{
-    border-radius: 50%;
     width: 300px;
     height: 300px;
 }
@@ -113,7 +112,7 @@ body button a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    background-color: #fcead2;
+    background-color: #f4f0eb;
 }
 
 .sub-pg-texto{
@@ -125,7 +124,14 @@ body button a {
 }
 
 .sub-pg-texto h2 {
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub-pg-texto h4 {
+    font-size: 20px;
+    margin-top: 1px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -181,12 +187,18 @@ body button a {
     text-decoration: underline;
 }
 
+@keyframes fadeInAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .bloco {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0;
   gap: 1%;
+ animation: fadeInAnimation ease 2s;
 }
 
 .bloco .texto{
@@ -253,9 +265,11 @@ body button a {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: auto;
+  animation: fadeInAnimation ease 2s;
 }
 
 .evento h2 {
+  max-width: 59%;
   margin-top: 0;
   color: #2c3e50;
 }
@@ -275,45 +289,111 @@ body button a {
   color: #555;
 }
 
-.evento a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 10px;
-  margin-top: 1rem;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  align-items: end;
-}
-
 .evento img {
   position: absolute;
   top: 5%;
-  left: 52%;
-  width: 45%;
+  left: 54%;
+  width: 43%;
   height: 150px;
   object-fit: cover;
   border-radius: 5px;
   border: 2px solid #000000;
 }
 
-.evento a {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  margin: 10px;
-  margin-top: 1rem;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  align-items: end;
-}
-
 .evento a:hover {
   text-decoration: underline;
 }
 
+.links-evento {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.links-evento a {
+  color: #007bff;
+  text-decoration: none;
+  color: #4A7BAE;
+  font-weight: bold;
+}
+
+.grid-fotos {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.fotos {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+  animation: fadeInAnimation ease 2s;
+}
+
+.fotos img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+/* Miniatura */
+.miniatura {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.miniatura:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay em tela cheia */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay img {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.link-return{
+  position: relative;
+  text-align: end;
+  margin-right: 1%;
+}
+
+.link-return a{
+  font-size: 120%;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .scroll-box {
   min-width: 200px;
@@ -498,4 +578,3 @@ body button a {
     padding: 15px;
   }
 }
-
