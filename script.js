@@ -1,35 +1,15 @@
-class MobileNavbar {
-  constructor() {
-    this.mobileMenu = document.querySelector(mobileMenu)
-    this.navList = document.querySelector(navList)
-    this.navLinks = document.querySelectorAll(navLinks)
-    this.activeClass = "ativo";
-  }
+let count = 1;
+    document.getElementById("radio1").checked =true;
 
+    setInterval( function(){
+        nextImage();
+    }, 5000)
 
-  this.handleClick =  this.handleClick.bind(this);
-
-  handleClick = () {
-    console.log(this);
-    this.navList.classList.toggle(this.activeClass);
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click",this.handleClick);
-  }
-
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
+    function nextImage(){
+        count++;
+        if(count>4){
+            count = 1;
+        }
+        
+    document.getElementById("radio"+count).checked = true;
     }
-    return this;
-  }   
-
-}
-
-const mobileNavbar = new MobileNavbar(
-  ".menu-toggle",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init();
