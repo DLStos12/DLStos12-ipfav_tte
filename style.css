@@ -156,6 +156,7 @@ body button a {
   margin-top: 15px;
   color: #4A7BAE;
   font-weight: bold;
+  font-size:90%;
 }
 
 /* Fundo escurecido */
@@ -767,3 +768,4 @@ body button a {
     padding: 15px;
   }
 }
+
