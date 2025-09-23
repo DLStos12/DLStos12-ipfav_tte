@@ -504,7 +504,7 @@ body button a {
 }
 
 .bloco .imagem img {
-  width: 200px;
+  width: 300px;
   height: 200px;
   margin-right: 10px;
   margin-left: 10px;
@@ -517,6 +517,10 @@ body button a {
 /* Alterna os lados automaticamente */
 .bloco:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+#img-lider{
+  height: 400px;
 }
 
 .evento-container {
@@ -594,32 +598,16 @@ body button a {
   scrollbar-color: #888 transparent;
 }
 
-.embed-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3%;
-  padding: 10px;
-  max-width: 300px; /* controla o tamanho da imagem */
-}
-
-.embed-wrapper blockquote.instagram-media {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-
 .fotos {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
   flex: 1 1 100px; /* Cada item ocupa até 300px */
   animation: fadeInAnimation ease 2s;
 }
 
-.fotos blockquote.instagram-media {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+.fotos img{
+  border-radius: 5%;
+  border: solid 2px #000;
+}
 
 /* Miniatura */
 .miniatura {
@@ -939,8 +927,10 @@ body button a {
   }
 
   #iframe {
-    margin-left: 5%;
-    margin-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
   }
 
   .bloco .imagem img {
@@ -960,6 +950,10 @@ body button a {
     height: auto;
     margin: 10px auto;
     display: block;
+  }
+
+  #img-lider{
+    height: 400px;
   }
 
   .grid-fotos {
