@@ -591,7 +591,7 @@ background-color: #666;
 
 .bloco .imagem img {
   width: 300px;
-  height: 200px;
+  height: 300px;
   margin-right: 10px;
   margin-left: 10px;
   object-fit: cover;
@@ -606,7 +606,8 @@ background-color: #666;
 }
 
 #img-lider{
-  height: 10%;
+  height: 500px;
+  width: auto;
 }
 
 .evento-container {
