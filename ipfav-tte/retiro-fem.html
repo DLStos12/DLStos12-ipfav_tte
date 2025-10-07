@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja Palavra Fonte de Água Viva</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo-onda">
+    <header class= 'head'>
+       <h1>IPFAV Taubaté</h1>
+          <hr class="head-separator">
+         <nav class="menu">
+               <ul>
+                 <li><a href="index.html">Início</a></li>
+                 <li><a href="sobre.html">Quem Somos</a></li>
+                 <li><a href="atividades.html">Atividades</a></li>
+                 <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+               </nav>
+    </header>
+   <h1 style="font-size: 3em; text-align: center;">
+   1º Retiro das Mulheres IPFAV<br>
+   </h1>
+   <div class="grid-fotos">
+
+    <div class="fotos">
+       <img src="imagens/retiro-fem/retiro-das-mulheres.jpg" alt="Retiro das Mulheres1" class="miniatura" onclick="abrirImagem(this.src)">
+
+      <div class="overlay" id="overlay">
+        <img src="" alt="zoom" id="imagemZoom">
+      </div>
+   </div>
+
+   <script>
+  function abrirImagem(src) {
+    document.getElementById('imagemZoom').src = src;
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  document.getElementById('overlay').addEventListener('click', function() {
+    this.style.display = 'none';
+  });
+</script>
+</body>
+</html>
