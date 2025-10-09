@@ -337,23 +337,29 @@ body button a {
     text-decoration: underline;
 }
 
-.livro-container{
-  display: flex;
-  margin: 0 0 0;
-  gap: 0;
-  padding: 0;
-}
-
 .liv{
   display: flex;
+  margin-bottom: 3%;
 }
 
-.liv img {
-  margin: 10px;
-  border: 5px solid #000000 ;
-  height: 80%;
-  width: 20%;
+.liv img{
+  border: solid 3px #000;
+  height: 100%;
+  width: 100%;
 }
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
 
 @keyframes fadeInAnimation {
   0% { opacity: 0; }
