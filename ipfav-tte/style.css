@@ -687,7 +687,8 @@ background-color: #666;
 }
 
 #img-atv{
-  margin-top: -160%; margin-bottom: -100%;
+  margin-top: 5%; 
+  margin-bottom: -8%;
 }
 
 /* Carrossel Sobre nós */
@@ -1322,7 +1323,7 @@ background-color: #666;
     margin: 10px auto;
   }
 
-  #txt-atv{
+#txt-atv{
   height: auto;
 }
 
