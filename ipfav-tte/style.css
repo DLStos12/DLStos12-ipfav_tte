@@ -682,6 +682,14 @@ background-color: #666;
   transition: transform 0.3s ease;
 }
 
+#txt-atv{
+  height: 300px;
+}
+
+#img-atv{
+  margin-top: -160%; margin-bottom: -100%;
+}
+
 /* Carrossel Sobre nós */
 .carousel-sobre {
   position: relative;
@@ -1282,13 +1290,30 @@ background-color: #666;
     grid-template-rows: auto;
     gap: 10px;
     margin: 10px 0;
+    margin-top: -10%;
+    margin-bottom: 15%;
   }
+
+.carousel-sobre-nav {
+  margin-top: -20px;
+  margin-bottom: -70px;
+}
+.carousel-sobre-nav label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
 
   #iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8%;
+    margin-top: 15%;
+    margin-bottom: -10%;
   }
 
   .bloco .imagem img {
@@ -1296,6 +1321,14 @@ background-color: #666;
     height: auto;
     margin: 10px auto;
   }
+
+  #txt-atv{
+  height: auto;
+}
+
+#img-atv{
+  margin-top: 0; margin-bottom: 0;
+}
 
   .evento-container {
     grid-template-columns: 1fr;
