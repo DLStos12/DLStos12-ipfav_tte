@@ -410,6 +410,8 @@ background-color: #666;
   font-size: 90%;
 }
 
+
+/* Carrossel principal */
 .slider{
   position: relative;
   margin-top: 0;
@@ -564,6 +566,26 @@ background-color: #666;
   margin-bottom: 3%;
   font-size: 1.2em;
 }
+
+.slide-prev,
+.slide-next {
+  cursor: pointer;
+  font-size: 2em;
+  color: #49819d;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff8;
+  border-radius: 50%;
+  padding: 0 10px;
+  user-select: none;
+  z-index: 2;
+}
+
+.slide-next{
+  right: 5px;
+}
+/* Fim do carrossel principal */
 
 .fotos-container {
     display: flex;
