@@ -734,6 +734,10 @@ figcaption {
     height: auto;
   }
 
+  .slide-prev .slide-next{
+    display: none;
+  }
+
   .cifra {
     flex-direction: column;
     align-items: flex-start;
