@@ -466,6 +466,7 @@ background-color: #666;
   margin-left: -100%;
   display: flex;
   justify-content: center;
+  z-index: 999;
 }
 
 .manual-btn{
@@ -513,6 +514,7 @@ background-color: #666;
   margin-left: -25%;
   display: flex;
   justify-content: center;
+  z-index: 999;
 }
 
 .navigation-auto div:not(:last-child) {
@@ -761,6 +763,7 @@ background-color: #666;
 .carousel-sobre-nav {
   margin-top: 15px;
   margin-bottom: -100px;
+  z-index: 5;
 }
 .carousel-sobre-nav label {
   display: inline-block;
@@ -997,6 +1000,19 @@ background-color: #666;
   margin-top: -12%;
 }
 
+
+#video-culto {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* comportamento em telas pequenas */
+@media (max-width: 600px) {
+  #video-culto {
+    max-width: 98vw;
+  }
+}
 
 @media (max-width: 600px) {
   body, html {
