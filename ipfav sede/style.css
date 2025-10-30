@@ -855,4 +855,9 @@ figcaption {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  #video-ipfavSede{
+    max-height: 20%;
+    max-width: 100%;
+  }
 }
