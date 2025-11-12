@@ -12,6 +12,8 @@ João14:6
     <title>IPFAV Taubaté</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./ipfav-tte/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="fundo">
@@ -38,9 +40,9 @@ João14:6
         <h3>
             BEM-VINDO À NOSSA IGREJA
         </h3>
-<div class="main-container">
+    <div class="main-container">
 
-    <div class="botoes">
+ <div class="botoes">
         <button id="b1">
         <a href="./ipfav sede/index.html">SAIBA + IPFAV</a>
            </button> <br> <br>
@@ -60,29 +62,24 @@ João14:6
         FIQUE POR DENTRO...
     </h3>
 
-    <div class="slider" id="carrossel">
-        <div class="slides">
-     <!--Radio buttons-->
-    <input type="radio" name="radio-btn" id="radio1">
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-    <input type="radio" name="radio-btn" id="radio4">
-     <!--fim do radio buttons-->
-     
-     <!--slide images-->
-     <div class="slide first">
-        <label for="radio2" class="slide-next">&#10095;</label>
+    <!-- Inicio do carrossel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <!-- inicio slide 1 -->
+    <div class="carousel-item active">
          <a href="#imagem1" class="link-carrossel">
-             <img src="./ipfav-tte/imagens/noticias/estudo-biblico.jpeg" alt="slide1"> 
-             <div class="text-carrossel">
-                 <h2>Estudo Biblico</h2>
-                </div> 
-            </a>
-        </div>
-        
-        <div id="imagem1" class="popup">
-    <a href="#" class="fechar">&times;</a>
-    <img src="./ipfav-tte/imagens/noticias/estudo-biblico.jpeg" alt="estudo">
+      <img src="ipfav-tte/imagens/noticias/estudo-biblico.jpeg" class="d-block w-100" alt="...">
+       </a>
+    </div>
+    <div id="imagem1" class="popup">
+        <a href="#" class="fechar">&times;</a>
+        <img src="ipfav-tte/imagens/noticias/estudo-biblico.jpeg" alt="#">
         <div class="container-popup">
             <h1>Nosso estudo Biblico</h1>
             <p>
@@ -100,20 +97,15 @@ João14:6
             </p>
         </div>
     </div>
-        <!--FIm popup 1-->
+    <!-- final slide 1 -->
 
-        <div class="slide">
-           <label for="radio1" class="slide-prev">&#10094;</label>
-           <label for="radio3" class="slide-next">&#10095;</label>
-           <a href="#imagem3" class="link-carrossel">
-            <img src="./ipfav-tte/imagens/noticias/reforma-da-igreja1.jpeg" alt="slide3">
-             <div class="text-carrossel">
-               <h2>Reforma da Igreja</h2>
-           </div> 
-           </a>
-           </div>
-   
-           <div id="imagem3" class="popup">
+    <!-- inicio slide 2 -->
+    <div class="carousel-item">
+        <a href="#imagem2">
+        <img src="ipfav-tte/imagens/noticias/reforma-da-igreja-capa.jpeg" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <div id="imagem2" class="popup">
            <a href="#" class="fechar">&times;</a>
            <div class="carousel-popup">
            <!-- Radio buttons para navegação -->
@@ -169,75 +161,51 @@ João14:6
                </p>
            </div>
            </div>
-           <!--FIm popup 2-->
+           <!--FIm Slide 2-->
 
-     <div class="slide">
-        <label for="radio2" class="slide-prev">&#10094;</label>
-        <label for="radio4" class="slide-next">&#10095;</label>
-        <a href="#imagem2" class="link-carrossel">
-         <img src="./ipfav-tte/imagens/img1-exemplo.jpg" alt="slide2">
-          <div class="text-carrossel">
-            <h2>Batismo</h2>
-        </div> 
-        </a>
-        </div>
-
-        <div id="imagem2" class="popup">
+    <!-- Inicio slide 3 -->
+    <div class="carousel-item">
+        <a href="#imagem3" class="link-carrossel">
+      <img src="ipfav-tte/imagens/noticias/agenda-semanal2.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <div id="imagem3" class="popup">
         <a href="#" class="fechar">&times;</a>
-        <img src="./ipfav-tte/imagens/img1-exemplo.jpg" alt="estudo">
+        <img src="ipfav-tte/imagens/noticias/agenda-semanal2.png" alt="#">
         <div class="container-popup">
-            <h1>Batismo</h1>
+            <h1>Nossa Agenda</h1>
             <p>
-                O Batismo é um ato público de fé e obediência a Cristo, simbolizando a morte para o pecado e a ressurreição para uma nova vida nele. É uma declaração visível da transformação operada no coração de quem creu. <br><br>
-                Realizamos batismos em água periodicamente. Se você deseja ser batizado, procure um pastor ou líder após o culto ou entre em contato pelos nossos canais para informações e preparação. <br><br>
-                Traga roupa extra e uma toalha; ofereceremos orientação, oração e acompanhamento espiritual antes e depois do batismo. Venha participar desse momento de fé e celebração com nossa comunidade.
+                📅 <b>Nossa Agenda Semanal</b> <br><br>
+                ✝️ <b>Quarta</b> - 19:30 <br>
+                Culto de adoração e palavra <br><br>
+                📚 <b>Sexta</b> - 19:30 <br>
+                Estudo Bíblico <br> (Tema: Somos um) <br><br>
+                🕊️ <b>Domingo</b> - 19:00 <br>
+                Culto de Adoração e Palavra <br><br>
+                Venha nos visitar! Toda semana tem algo especial acontecendo. 💫
             </p>
         </div>
-        </div>
-        <!--FIm popup 3-->
+    </div>
+    <!-- final slide 3 -->
 
-
-     <div class="slide">
-        <label for="radio3" class="slide-prev">&#10094;</label>
-        <label for="radio1" class="slide-next">&#10094;</label>
-         <img src="ipfav-tte/imagens/img2-exemplo.jpg" alt="slide4">
-          <div class="text-carrossel">
-            <h2>1º Encontro dos Homens</h2>
-        </div>
-        </a>
-        </div>
-    
-        <div id="imagem4" class="popup">
-        <a href="https://www.instagram.com/ipfavtaubate/" target="_blank" class="fechar">&times;</a>
-        <img src="ipfav-tte/imagens/img1-exemplo.jpg" alt="estudo">
-        <div class="container-popup">
-            <h1>Churrasco e Futebol</h1>
-            <p>
-                Nosso encontro reúne os irmãos para fortalecer os laços de fé e amizade por meio de oração, partilha e comunhão fraterna. Haverá churrasco para todos e partidas de futebol descontraídas, convidando homens de todas as idades a participar, servir e se divertir juntos. Traga boa disposição, roupas confortáveis e o desejo de celebrar a comunidade — é um momento para fortalecer vínculos e cuidar uns dos outros.
-            </p>
-        </div>
-        </div>
-        <!--FIm popup 4-->
-     <!--fim slide images-->
-
-     <!--automatic navigation-->
-     <div class="navigation-auto">
-         <div class="auto-btn1"></div>
-         <div class="auto-btn2"></div>
-         <div class="auto-btn3"></div>
-         <div class="auto-btn4"></div>
-     </div>
- </div>
-     <!--fim automatic navigation-->
-
-     <!--manual navigation-->    
-     <div class="navigation-manual">
-         <label for="radio1" class="manual-btn"></label>
-         <label for="radio2" class="manual-btn"></label>
-         <label for="radio3" class="manual-btn"></label>
-         <label for="radio4" class="manual-btn"></label>
-     </div>
-     <!--fim manual navigation-->
+    <!-- Inicio slide 4 -->
+    <div class="carousel-item">
+        <a href="https://www.instagram.com/ipfavtaubate/">
+      <img src="ipfav-tte/imagens/noticias/folder-ista.png" class="d-block w-100" alt="...">
+    </a>
+    </div>
+  </div>
+  <!-- Final slides -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Final do carrossel -->
 
  </div>
 
@@ -290,7 +258,9 @@ Tirando a sua angústia.</p>
         </div>
     </div>
     </div>
-       <script src="ipfav-tte/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+       <!-- <script src="ipfav-tte/script.js"></script> -->
 </body>
 
 </html>
