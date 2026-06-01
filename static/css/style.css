@@ -502,7 +502,7 @@ footer a{
 /* Estilos para tablet */
 @media (min-width: 768px) {
   body{
-    background-image: url(../assets/images/bakground.png);
+    background-image: url("../assets/images/bakground.png");
     background-size: cover;
     background-attachment: fixed;
   }
